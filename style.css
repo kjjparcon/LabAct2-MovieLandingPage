@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    padding: 40px 40px;
+}
+header .logo{
+    max-width: 80px;
+}
+header .logo img{
+    max-width: 200%;
+}
+.banner{
+    min-height: 100vh;
+    padding: 40px 40px;
+    background: url('pics/bg.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    20%{
+        background-image: url(pics/bg1.png);
+    }
+    40%{
+        background-image: url(pics/bg2.png);
+    }
+    60%{
+        background-image: url(pics/bg3.png);
+    }
+    80%{
+        background-image: url(pics/bg4.png);
+    }
+}
+.content{
+    position: relative;
+    max-width: 700px;
+}
+.content .titleimg{
+    max-width: 700px;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 140px;
+}
+.content .date{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.75rem;
+    font-weight: bold;
+    margin-left: 75px;
+}
+.content p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.75rem;
+    font-weight: 300;
+    margin-left: 75px;
+    margin-top: 30px;
+}
+.playbtn {
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.playbtn img{
+    width: 40px;
+    height: 40px;
+    margin-left: 75px;
+    margin-right: 10px;
+}
+@media (max-width:625px){
+    .content .titleimg{
+        max-width: 330px;
+        width: 100%;
+        margin-left: 55px;
+        margin-top: 23%;
+    }
+    header .logo{
+        max-width: 60px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:530px){
+    .content .titleimg{
+        max-width: 300px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    header .logo{
+        max-width: 50px;
+        margin-left: 10px;
+    }
+}
